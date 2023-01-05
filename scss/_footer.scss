@@ -1,7 +1,7 @@
 #back-top {
   position: fixed;
   right: 1rem;
-  bottom: 2rem;
+  bottom: 6rem;
   width: 2.5rem;
   height: 2.5rem;
   background: rgba(209, 35, 42, 0.6);
@@ -22,4 +22,108 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.footer-1 {
+  padding-top: 48px;
+  padding-bottom: 21px;
+  background: #f7f7f7;
+}
+
+.footer-contact {
+  max-width: 286px;
+  width: 100%;
+
+  & .footer-logo {
+    display: block;
+    width: 171px;
+    margin-bottom: 18px;
+  }
+}
+.footer-nav {
+  max-height: 230px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+
+  & .footer-nav__item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+}
+.footer-newsletter {
+  max-width: 334px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & .phone-contact > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  & .phone-contact .text {
+    font-family: SF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 7px;
+  }
+
+  & .phone-contact .number {
+    font-family: SF;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #d1232a;
+  }
+}
+.footer-1 .text,
+.footer-1 .footer-nav__item a {
+  font-family: SF;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-1 .text:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-2 {
+  background: #d1232a;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  & .footer-left {
+    max-width: 287px;
+  }
+
+  & .footer-center {
+    max-width: 470px;
+  }
+  & .text {
+    font-family: SF;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+  }
+
+  & .footer-right__item {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }

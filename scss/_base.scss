@@ -216,6 +216,9 @@ img {
 .text-gray-33 {
   color: #333;
 }
+.text-gray-66 {
+  color: #666;
+}
 .text-gray-82 {
   color: #828282;
 }
@@ -557,6 +560,13 @@ img {
 .fix-text3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fix-text4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

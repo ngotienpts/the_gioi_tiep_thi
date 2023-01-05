@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var sticky = navbar.offsetTop;
   }
 
-  // end show sub menu mb
+  //
+  var headerMbBlock = document.querySelector(".header-mb-block");
 
   const app = {
     // su ly cac su kien
@@ -28,7 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
           document.documentElement.scrollTop = 0;
         };
       }
+      // header
+      if (headerMbBlock) {
+        var showSearch = headerMbBlock.querySelector(".header-mb__search");
+        var searchMb = headerMbBlock.querySelector(".search-mb");
 
+        showSearch.onclick = () => {
+          searchMb.classList.toggle("hidden");
+        };
+      }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {
         // if (menuPc && btnMenu) {
@@ -51,6 +60,36 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+    },
+    // media
+    sliderMedia: function () {
+      var swiper = new Swiper(".mySwiperMediaSecondary", {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        freeMode: true,
+        watchSlidesProgress: true,
+        direction: "vertical",
+        mousewheel: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        // breakpoints: {
+        //   768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 0,
+        //     slidesPerGroup: 1,
+        //   },
+        // },
+      });
+      var swiper2 = new Swiper(".mySwiperMediaPrimary", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        thumbs: {
+          swiper: swiper,
         },
       });
     },
@@ -108,6 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.windowScroll();
       // slide topic list
       this.slideToppicList();
+      // media
+      this.sliderMedia();
       // sticky bar home 1
       this.stickyHome1();
       // fancybox
