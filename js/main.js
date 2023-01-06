@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //
   var headerMbBlock = document.querySelector(".header-mb-block");
+  if (headerMbBlock) {
+    var navMb = headerMbBlock.querySelector(".nav-mb");
+  }
+
+  // show sub title
+  var subTitles = document.querySelectorAll(".sub-title__btn");
+
+  // show sub menu
+  var subMenu = document.querySelector(".sub-menu");
 
   const app = {
     // su ly cac su kien
@@ -33,10 +42,33 @@ document.addEventListener("DOMContentLoaded", function () {
       if (headerMbBlock) {
         var showSearch = headerMbBlock.querySelector(".header-mb__search");
         var searchMb = headerMbBlock.querySelector(".search-mb");
+        var barMb = headerMbBlock.querySelector(".header-mb__bar");
 
         showSearch.onclick = () => {
           searchMb.classList.toggle("hidden");
         };
+
+        barMb.onclick = () => {
+          subMenu.classList.toggle("sticky");
+          if (widthDoc) {
+            if (subMenu.matches(".sticky")) {
+              widthDoc.style.overflow = "hidden";
+            } else {
+              widthDoc.style.overflow = "auto";
+            }
+          }
+        };
+      }
+
+      // show sub title
+      if (subTitles) {
+        subTitles.forEach(function (subTitle) {
+          subTitle.onclick = function () {
+            this.parentElement
+              .querySelector(".sub-title__list")
+              .classList.toggle("show");
+          };
+        });
       }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {
@@ -128,6 +160,14 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           navbar.classList.remove("sticky");
         }
+      }
+
+      if (window.scrollY >= 100) {
+        headerMbBlock.classList.add("sticky");
+        navMb.classList.add("hidden");
+      } else {
+        headerMbBlock.classList.remove("sticky");
+        navMb.classList.remove("hidden");
       }
     },
 

@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>Thế giới tiếp thị</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/slick/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./lib/slick/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./lib/font-awesome/fontawesome-free-5.15.4-web/css/all.min.css" />
+  <link rel="stylesheet" href="./lib/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+  <!-- sub menu -->
+  <div class="sub-menu">
+    <ul class="sub-menu-list">
+      <li class="sub-menu-item">
+        <h4 class="sub-menu-item__title"><a href="#">Thời sự</a></h4>
+        <ul>
+          <li><a href="#">Đời sống</a></li>
+          <li><a href="#">Xã hội</a></li>
+        </ul>
+      </li>
+      <li class="sub-menu-item">
+        <h4 class="sub-menu-item__title"><a href="#">Thời sự</a></h4>
+        <ul>
+          <li><a href="#">Đời sống</a></li>
+          <li><a href="#">Xã hội</a></li>
+        </ul>
+      </li>
+      <li class="sub-menu-item">
+        <h4 class="sub-menu-item__title"><a href="#">Thời sự</a></h4>
+        <ul>
+          <li><a href="#">Đời sống</a></li>
+          <li><a href="#">Xã hội</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- end sub menu -->
+  <!-- header -->
+  <header id="header" class="header clearfix">
+    <!-- pc -->
+    <div class="d-2xl-block d-md-none">
+      <div class="header-top w-1170 d-2xl-flex align-items-center justify-content-between">
+        <div class="header-top-left d-2xl-flex align-items-center">
+          <!-- logo -->
+          <h1 class="header-logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="">
+            </a>
+          </h1>
+          <!-- end logo -->
+          <!-- weather -->
+          <div class="header-weather d-2xl-flex align-items-center">
+            <div class="icon-weather" id="divWeatherImage">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.4415 11.1915C26.4415 14.8412 23.483 17.7999 19.8331 17.7999C16.1833 17.7999 13.2246 14.8412 13.2246 11.1915C13.2246 7.54172 16.1833 4.58301 19.8331 4.58301C23.483 4.58301 26.4415 7.54172 26.4415 11.1915Z"
+                  fill="#FDD020" />
+                <path
+                  d="M29.4916 11.6998H28.4749C28.1942 11.6998 27.9666 11.4722 27.9666 11.1914C27.9666 10.9107 28.1942 10.6831 28.4749 10.6831H29.4916C29.7726 10.6831 29.9999 10.9107 29.9999 11.1914C29.9999 11.4722 29.7726 11.6998 29.4916 11.6998Z"
+                  fill="#FDD020" />
+                <path
+                  d="M18.8164 3.05803C18.5357 3.05803 18.308 2.83042 18.308 2.54969V1.533C18.308 1.25227 18.5357 1.02466 18.8164 1.02466C19.0974 1.02466 19.3247 1.25227 19.3247 1.533V2.54969C19.3247 2.83042 19.0974 3.05803 18.8164 3.05803Z"
+                  fill="#FDD020" />
+                <path
+                  d="M25.9331 5.59954C25.7276 5.59954 25.5425 5.47568 25.4638 5.28555C25.3851 5.09567 25.4285 4.87724 25.574 4.73179L26.5907 3.7151C26.7182 3.58281 26.9071 3.52994 27.0849 3.57635C27.2626 3.62302 27.4013 3.76177 27.448 3.93949C27.4944 4.11721 27.4415 4.3061 27.3092 4.43393L26.2926 5.45061C26.1972 5.54593 26.0682 5.59954 25.9331 5.59954Z"
+                  fill="#FDD020" />
+                <path
+                  d="M23.076 23.8999C24.9929 23.9459 26.7843 22.9495 27.7565 21.2967C28.7285 19.6436 28.7285 17.5938 27.7565 15.9407C26.7843 14.2879 24.9929 13.2915 23.076 13.3374C22.7175 13.3377 22.3599 13.3727 22.0084 13.4422C21.5683 11.4073 19.7606 9.96074 17.6788 9.97687C17.0424 9.97712 16.4131 10.1131 15.8336 10.376C14.8127 7.75238 12.0818 6.21395 9.30901 6.70045C6.53621 7.18695 4.49217 9.56285 4.4254 12.3773C4.42664 13.0351 4.5433 13.6874 4.76992 14.305C3.04509 14.3152 1.4585 15.2502 0.614077 16.7544C-0.230098 18.2585 -0.202298 20.1 0.687549 21.5779C1.57715 23.0555 3.19153 23.9421 4.91587 23.8999"
+                  fill="#A3D4F7" />
+                <path
+                  d="M20.8497 25.9333C20.8497 27.0562 19.9395 27.9666 18.8163 27.9666C17.6934 27.9666 16.783 27.0562 16.783 25.9333C16.783 24.4083 18.8163 20.8499 18.8163 20.8499C18.8163 20.8499 20.8497 24.4083 20.8497 25.9333Z"
+                  fill="#60A2D7" />
+                <path
+                  d="M15.7663 20.8498C15.7663 21.9727 14.8561 22.8831 13.733 22.8831C12.61 22.8831 11.6996 21.9727 11.6996 20.8498C11.6996 19.3247 13.733 15.7664 13.733 15.7664C13.733 15.7664 15.7663 19.3247 15.7663 20.8498Z"
+                  fill="#60A2D7" />
+                <path
+                  d="M11.1912 26.9501C11.1912 28.073 10.281 28.9835 9.15788 28.9835C8.03496 28.9835 7.12451 28.073 7.12451 26.9501C7.12451 25.4251 9.15788 21.8667 9.15788 21.8667C9.15788 21.8667 11.1912 25.4251 11.1912 26.9501Z"
+                  fill="#60A2D7" />
+              </svg>
+            </div>
+            <div class="header-weather__box">
+              <div class="header-weather__temperature fs-12 text-gray-4f fw-600">
+                <span class="location">Hà Nội</span>
+                <span class="temperature" id="divWeather" style="font-weight: normal;">31<sup>o</sup>C</span>
+              </div>
+              <div class="header-weather__date fs-12 text-gray-4f">
+                Thứ tư, <span>04/01/2023</span>
+              </div>
+            </div>
+          </div>
+          <!-- end wether -->
+        </div>
+
+        <!-- search -->
+        <div class="header-search">
+          <input type="text" placeholder="Tìm kiếm" class="search-input txt-search search" name="keywords">
+          <btn class="btn-search" id="btn_search" rel="nofollow">
+            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.2886 17.6831L13.7106 12.8752C14.8462 11.5083 15.486 9.7911 15.5242 8.0074C15.5624 6.2237 14.9967 4.48022 13.9207 3.06505C12.8446 1.64987 11.3226 0.647695 9.60608 0.224114C7.88956 -0.199468 6.08127 -0.0191042 4.48002 0.735401C2.87876 1.48991 1.58037 2.7734 0.79938 4.3738C0.0183912 5.9742 -0.198453 7.79573 0.184677 9.5374C0.567808 11.2791 1.52798 12.8367 2.90655 13.9528C4.28511 15.0689 5.99957 15.6768 7.76661 15.6759C9.35974 15.6804 10.9148 15.1846 12.2166 14.2574L16.8296 19.1037C16.9192 19.2095 17.0293 19.2956 17.1531 19.3569C17.2768 19.4182 17.4117 19.4533 17.5494 19.4602C17.687 19.467 17.8246 19.4454 17.9538 19.3967C18.0829 19.348 18.2008 19.2732 18.3003 19.1769C18.3998 19.0805 18.4788 18.9647 18.5324 18.8365C18.586 18.7083 18.6132 18.5704 18.6122 18.4312C18.6112 18.292 18.582 18.1545 18.5266 18.0271C18.4711 17.8997 18.3905 17.7851 18.2896 17.6902L18.2886 17.6831ZM7.76661 2.0385C8.90188 2.0385 10.0116 2.3784 10.9556 3.01521C11.8995 3.65202 12.6352 4.55714 13.0697 5.61612C13.5041 6.6751 13.6178 7.84037 13.3963 8.96457C13.1748 10.0888 12.6282 11.1214 11.8254 11.9319C11.0227 12.7424 9.99988 13.2944 8.88643 13.518C7.77298 13.7416 6.61886 13.6269 5.57001 13.1882C4.52117 12.7496 3.6247 12.0068 2.99398 11.0537C2.36326 10.1007 2.02662 8.98017 2.02662 7.83394C2.02847 6.29747 2.63381 4.82446 3.70987 3.73801C4.78593 2.65156 6.24484 2.04037 7.76661 2.0385Z"
+                fill="#D6371C" />
+            </svg>
+          </btn>
+        </div>
+
+        <!-- end search -->
+
+        <!-- right -->
+        <div class="header-top-right d-2xl-flex">
+          <div class="swiper-container hashtag-slide" id="site_ListTag">
+          </div>
+          <div class="hashtag-btn prev">
+            <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.55868e-08 5.5L8.25 0.73686L8.25 10.2631L6.55868e-08 5.5Z" fill="#C31E40" />
+            </svg>
+          </div>
+          <div class="hashtag-btn next">
+            <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 5.5L0.75 10.2631L0.75 0.73686L9 5.5Z" fill="#C31E40" />
+            </svg>
+          </div>
+        </div>
+        <!-- end right -->
+      </div>
+      <!-- navbar -->
+      <div class="navbar d-2xl-flex align-items-center">
+        <div class="w-1170">
+          <ul class="navbar-list d-2xl-flex align-items-center">
+            <li class="navbar-item active">
+              <a href="/" title='Trang chủ'>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.8121 7.32424C15.084 7.02519 15.0577 6.56684 14.7535 6.30075L8.04977 0.434979C7.74549 0.168887 7.25765 0.174461 6.95978 0.447545L0.233293 6.61349C-0.0645821 6.88657 -0.079202 7.34434 0.200924 7.63552L0.369566 7.81115C0.64935 8.10233 1.10159 8.13704 1.37903 7.88845L1.88173 7.43827V14.0291C1.88173 14.4334 2.20938 14.7608 2.61346 14.7608H5.23546C5.63954 14.7608 5.96719 14.4334 5.96719 14.0291V9.41817H9.31158V14.0291C9.30576 14.4331 9.59489 14.7605 9.99896 14.7605H12.7776C13.1817 14.7605 13.5094 14.4331 13.5094 14.0288V7.53107C13.5094 7.53107 13.6482 7.65273 13.8195 7.80328C13.9905 7.95354 14.3496 7.83306 14.6215 7.53371L14.8121 7.32424Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Thời sự</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Thị trường 24h</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Tiếp thi - Bán hàng</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Đô thị - Địa ốc</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Đầu tư - Tài chính</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Xe & Số</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Shopping</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Giải trí - Du lịch - Ẩm thực</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Media</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" title="">Góc nhìn thị trường</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end navbar -->
+    </div>
+    <!-- end pc -->
+    <!-- header mb -->
+    <div class="d-2xl-none d-md-block">
+      <div class="header-mb-block">
+        <div class="header-mb d-2xl-flex align-items-center justify-content-between">
+          <div class="header-mb__bar header-mb__item">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="header-mb__logo">
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+          </div>
+          <div class="header-mb__search header-mb__item">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <!-- search -->
+        <div class="search-mb hidden">
+          <input type="text" class="serach-mb-input" placeholder="Nhập nội dung tìm kiếm" name="keywords">
+          <button  class="btn search-mb-btn" rel="nofollow">
+            <i class="fas fa-search"></i>
+          </button>
+      </div>
+        <!-- end search -->
+        <!-- navbar -->
+        <ul class="nav-mb">
+          <li class="nav-mb__item">
+            <a href="#">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.87473 4.88291C10.056 4.68354 10.0385 4.37798 9.83565 4.20058L5.36651 0.290068C5.16366 0.112672 4.83844 0.116389 4.63985 0.298445L0.155529 4.40907C-0.0430547 4.59113 -0.0528013 4.89631 0.133949 5.09043L0.246377 5.20751C0.4329 5.40163 0.734393 5.42478 0.91935 5.25905L1.25448 4.95893V9.35279C1.25448 9.62238 1.47292 9.84061 1.7423 9.84061H3.49031C3.75969 9.84061 3.97813 9.62238 3.97813 9.35279V6.27886H6.20772V9.35279C6.20384 9.62218 6.39659 9.84042 6.66598 9.84042H8.51842C8.7878 9.84042 9.00624 9.62218 9.00624 9.3526V5.0208C9.00624 5.0208 9.09882 5.1019 9.213 5.20227C9.327 5.30244 9.56642 5.22212 9.7477 5.02256L9.87473 4.88291Z" fill="white"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-mb__item">
+            <h1><a href="#">Giải trí - Du lịch - Ẩm thực</a></h1>
+          </li>
+          <li class="nav-mb__item">
+            <a href="#">Giải trí</a>
+          </li>
+          <li class="nav-mb__item">
+            <a href="#">Giải trí</a>
+          </li>
+          <li class="nav-mb__item">
+            <a href="#">Giải trí</a>
+          </li>
+          <li class="nav-mb__item">
+            <a href="#">Giải trí</a>
+          </li>
+          <li class="nav-mb__item">
+            <a href="#">Giải trí</a>
+          </li>
+        </ul>
+        <!-- end navbar -->
+      </div>
+    </div>
+    <!-- end header mb -->
+  </header>
+  <!-- end header -->
+  <!-- main -->
+  <main id="main" class="">
+    <!-- pc -->
+    <div class="d-2xl-block d-md-none">
+      <!-- ads -->
+      <div class="ads-top my-15 w-1170">
+        <img src="./images/ads_top.jpeg" alt="" class=" mx-auto w-100">
+      </div>
+      <!-- end ads -->
+      <!-- block -->
+      <div class="w-1170">
+        <!-- header block-->
+        <div class="category-block-header d-2xl-flex align-items-center">
+            <h2 class="block-header__cate fs-24 fw-600 lh-24 mr-24"><a href="#">Thời sự</a></h2>
+            <ul class="block-header__list d-2xl-flex align-items-center text-gray-66">
+              <li class="block-header__item mr-24 active"><a href="#">Thời sự</a></li>
+              <li class="block-header__item mr-24"><a href="#">Xã hội</a></li>
+            </ul>
+          </div>
+          <!-- end header block-->
+      </div>
+      <div class="w-1170 block d-2xl-flex gap-20">
+        <!-- left -->
+        <div class="block-left flex-1 leftSidebar-1">
+          <!-- block cate -->
+          <div class="block-cate block-category">
+            <!-- articles-top -->
+            <div class="articles-top articles-top--secondary d-2xl-grid col-4 gap-20">
+              <!-- item -->
+              <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                  <div class="articles-public">
+                    <a href="#">Đô thị - Địa ốc</a>
+                    <span>10 giờ trước</span>
+                  </div>
+                  <p class="articles-des">
+                    Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                    và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                    thị.
+                  </p>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                  <div class="articles-public">
+                    <a href="#">Đô thị - Địa ốc</a>
+                    <span>10 giờ trước</span>
+                  </div>
+                  <p class="articles-des">
+                    Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                    và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                    thị.
+                  </p>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                  <div class="articles-public">
+                    <a href="#">Đô thị - Địa ốc</a>
+                    <span>10 giờ trước</span>
+                  </div>
+                  <p class="articles-des">
+                    Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                    và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                    thị.
+                  </p>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                  <div class="articles-public">
+                    <a href="#">Đô thị - Địa ốc</a>
+                    <span>10 giờ trước</span>
+                  </div>
+                  <p class="articles-des">
+                    Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                    và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                    thị.
+                  </p>
+                </div>
+                <!-- end content -->
+              </div>
+              <!-- end item -->
+            </div>
+            <!-- end articles-top -->
+          </div>
+          <!-- block cate -->
+
+          <!-- block cate secondary -->
+          <div class="block-category-secondary">
+            <!-- left -->
+            <div class="block-category-secondary__left">
+                <!-- articles other -->
+                <div class="articles-other">
+                    <!-- item -->
+                    <div class="articles-other__item">
+                        <!-- img -->
+                        <div class="articles-img">
+                          <a href="#" class="image-wrapper">
+                            <img src="./images/3.jpg" alt="">
+                          </a>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="articles-content">
+                          <h2 class="articles-title">
+                            <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                          </h2>
+                          <p class="articles-des">
+                            Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                            và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                            thị.
+                          </p>
+                        </div>
+                        <!-- end content -->
+                    </div>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="articles-other__item">
+                        <!-- img -->
+                        <div class="articles-img">
+                          <a href="#" class="image-wrapper">
+                            <img src="./images/3.jpg" alt="">
+                          </a>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="articles-content">
+                          <h2 class="articles-title">
+                            <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                          </h2>
+                          <p class="articles-des">
+                            Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                            và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                            thị.
+                          </p>
+                        </div>
+                        <!-- end content -->
+                    </div>
+                    <!-- end item -->
+                    <!-- item -->
+                    <div class="articles-other__item">
+                        <!-- img -->
+                        <div class="articles-img">
+                          <a href="#" class="image-wrapper">
+                            <img src="./images/3.jpg" alt="">
+                          </a>
+                        </div>
+                        <!-- end img -->
+                        <!-- content -->
+                        <div class="articles-content">
+                          <h2 class="articles-title">
+                            <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                          </h2>
+                          <p class="articles-des">
+                            Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                            và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                            thị.
+                          </p>
+                        </div>
+                        <!-- end content -->
+                    </div>
+                    <!-- end item -->
+                </div>
+                <!-- end articles other -->
+                <!-- pagination -->
+                <div class="pagination">
+                    <a href="#" class="pagination-arrow pagination-back">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.67964L0.847253 10.5269L6.1107 5.26344L0.847253 0L0 0.847253L4.41619 5.26344L0 9.67964Z" fill="#343434"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="number active">1</a>
+                    <a href="#" class="number">2</a>
+                    <a href="#" class="pagination-arrow pagination-next">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.67964L0.847253 10.5269L6.1107 5.26344L0.847253 0L0 0.847253L4.41619 5.26344L0 9.67964Z" fill="#343434"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- end pagination -->
+            </div>
+            <!-- end left -->
+            <!-- right -->
+            <div class="block-category-secondary__right">
+                <!-- category box -->
+                <div class="category-box">
+                    <!-- header -->
+                    <div class="block-header d-2xl-flex align-items-center border-none">
+                        <h2 class="block-header__cate fs-22 fw-600 lh-24 pl-15"><a href="#">Thời sự</a></h2>
+                      </div>
+                    <!-- end header -->
+                    <!-- container -->
+                    <div class="category-box__container">
+                        <!-- item -->
+                        <div class="articles-item">
+                            <!-- img -->
+                            <div class="articles-img">
+                              <a href="#" class="image-wrapper">
+                                <img src="./images/3.jpg" alt="">
+                              </a>
+                            </div>
+                            <!-- end img -->
+                            <!-- content -->
+                            <div class="articles-content">
+                              <h2 class="articles-title">
+                                <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                              </h2>
+                            </div>
+                            <!-- end content -->
+                          </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="articles-item">
+                            <!-- img -->
+                            <div class="articles-img">
+                              <a href="#" class="image-wrapper">
+                                <img src="./images/3.jpg" alt="">
+                              </a>
+                            </div>
+                            <!-- end img -->
+                            <!-- content -->
+                            <div class="articles-content">
+                              <h2 class="articles-title">
+                                <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                              </h2>
+                            </div>
+                            <!-- end content -->
+                          </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="articles-item">
+                            <!-- img -->
+                            <div class="articles-img">
+                              <a href="#" class="image-wrapper">
+                                <img src="./images/3.jpg" alt="">
+                              </a>
+                            </div>
+                            <!-- end img -->
+                            <!-- content -->
+                            <div class="articles-content">
+                              <h2 class="articles-title">
+                                <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                              </h2>
+                            </div>
+                            <!-- end content -->
+                          </div>
+                        <!-- end item -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end category box -->
+            </div>
+            <!-- end right -->
+          </div>
+          <!-- end block cate secondary -->
+          
+        </div>
+        <!-- end left -->
+        <!-- right -->
+        <div class="block-right flex-0 rightSidebar-1">
+          <div class="ads-right">
+            <img src="./images/ads_right.jpg" alt="">
+          </div>
+        </div>
+        <!-- end right -->
+      </div>
+      <!-- end block -->
+  
+    </div>
+    <!-- end pc -->
+
+    <!-- mb -->
+    <div class="d-2xl-none d-md-block">
+        <!-- articles top -->
+      <div class="articles-top">
+        <!-- large -->
+        <div class="articles-top__large">
+          <!-- img -->
+          <div class="articles-img">
+            <a href="#" class="image-wrapper">
+              <img src="./images/3.jpg" alt="">
+            </a>
+          </div>
+          <!-- end img -->
+          <!-- content -->
+          <div class="articles-content">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+            <div class="articles-public">
+              <a href="#">Đô thị - Địa ốc</a>
+              <span>- 10 giờ trước</span>
+            </div>
+            <p class="articles-des">
+              Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+              và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+              thị.
+            </p>
+          </div>
+          <!-- end content -->
+        </div>
+        <!-- end large -->
+        <!-- small -->
+        <div class="articles-top__small">
+          <!-- img -->
+          <div class="articles-img flex-0">
+            <a href="#" class="image-wrapper">
+              <img src="./images/3.jpg" alt="">
+            </a>
+          </div>
+          <!-- end img -->
+          <!-- content -->
+          <div class="articles-content flex-1 fw-600 ml-15 fs-15">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+          </div>
+          <!-- end content -->
+        </div>
+        <!-- end small -->
+        <!-- small -->
+        <div class="articles-top__small">
+          <!-- img -->
+          <div class="articles-img flex-0">
+            <a href="#" class="image-wrapper">
+              <img src="./images/3.jpg" alt="">
+            </a>
+          </div>
+          <!-- end img -->
+          <!-- content -->
+          <div class="articles-content flex-1 fw-600 ml-15 fs-15">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+          </div>
+          <!-- end content -->
+        </div>
+        <!-- end small -->
+        <!-- small -->
+        <div class="articles-top__small">
+          <!-- img -->
+          <div class="articles-img flex-0">
+            <a href="#" class="image-wrapper">
+              <img src="./images/3.jpg" alt="">
+            </a>
+          </div>
+          <!-- end img -->
+          <!-- content -->
+          <div class="articles-content flex-1 fw-600 ml-15 fs-15">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+          </div>
+          <!-- end content -->
+        </div>
+        <!-- end small -->
+
+
+      </div>
+      <!-- end articles top -->
+      <!-- articles other mb -->
+      <div class="artilces-other-mb mx-15">
+        <!-- item -->
+        <div class="articles-other__item">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+            <!-- content -->
+            <div class="articles-content">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- des -->
+                <div class="">
+                    <p class="articles-des fix-text4">
+                        Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                        và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                        thị.
+                    </p>
+                </div>
+                <!-- des -->
+            </div>
+            <!-- end content -->
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="articles-other__item">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+            <!-- content -->
+            <div class="articles-content">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- des -->
+                <div class="">
+                    <p class="articles-des fix-text4">
+                        Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                        và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                        thị.
+                    </p>
+                </div>
+                <!-- des -->
+            </div>
+            <!-- end content -->
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="articles-other__item">
+            <h2 class="articles-title">
+              <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+            </h2>
+            <!-- content -->
+            <div class="articles-content">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- des -->
+                <div class="">
+                    <p class="articles-des fix-text4">
+                        Ngay trong dịp khai trương phố ẩm thực đêm Vinhomes Grand Park (TP. Thủ Đức), hàng ngàn khách tham quan
+                        và cư dân đã hoà mình vào không khí sầm uất tại đây, kích hoạt sự phát triển “kinh tế đêm” tại đại đô
+                        thị.
+                    </p>
+                </div>
+                <!-- des -->
+            </div>
+            <!-- end content -->
+        </div>
+        <!-- end item -->
+        <button class="btn btn-load-more"> Hiển thị thêm </button>
+      </div>
+      <!-- end articles other mb -->
+      
+
+      <!-- category box -->
+      <div class="category-box category-box-mb">
+        <!-- header -->
+        <div class="block-header d-2xl-flex align-items-center border-none">
+            <h2 class="block-header__cate fs-18 fw-600 lh-24 pl-15"><a href="#">Thời sự</a></h2>
+          </div>
+        <!-- end header -->
+        <!-- container -->
+        <div class="category-box__container">
+            <!-- item -->
+            <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                </div>
+                <!-- end content -->
+              </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                </div>
+                <!-- end content -->
+              </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="articles-item">
+                <!-- img -->
+                <div class="articles-img">
+                  <a href="#" class="image-wrapper">
+                    <img src="./images/3.jpg" alt="">
+                  </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="articles-content">
+                  <h2 class="articles-title">
+                    <a href="#">Bùng nổ với phố ẩm thực đêm tại khu đô thị Vinhomes Grand Park</a>
+                  </h2>
+                </div>
+                <!-- end content -->
+              </div>
+            <!-- end item -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end category box -->
+
+
+    </div>
+    <!-- end mb -->
+  </main>
+  <!-- end main -->
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <!-- pc -->
+    <div class="footer-section d-2xl-block d-md-none">
+      <div class="footer-1">
+        <div class="w-1170 d-2xl-flex justify-content-between">
+            <div class="footer-contact">
+                <a href="#" class="footer-logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </a>
+                <p class='text'>Chuyên trang của Báo điện tử Dân Việt</p>
+                <p class='text'>Trụ sở: 13 Thụy Khuê, Tây Hồ, Hà Nội</p>
+                <p class='text'>Toà soạn: 236A/6 Lê Văn Sỹ, P.1, Quận Tân Bình, TP.HCM</p>
+                <p class='text'>Website: thegioitiepthi.danviet.vn</p>
+                <p class='text'>Email: tgtto.dv@gmail.com</p>
+            </div>
+
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Thời sự">Thời sự</a>
+              </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="" title="Thị trường 24h">Thị trường 24h</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Tiếp thị - Bán hàng">Tiếp thị - Bán hàng</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Đô thị - Địa ốc">Đô thị - Địa ốc</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Đầu tư - Tài chính">Đầu tư - Tài chính</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Xe &amp; Số">Xe &amp; Số</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Shopping">Shopping</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Giải trí - Du lịch - Ẩm thực">Giải trí - Du lịch - Ẩm thực</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Media">Media</a>
+              </li>
+              <li class="footer-nav__item">
+                  <a href="#" class="" title="Góc nhìn thị trường">Góc nhìn thị trường</a>
+              </li>
+            </ul>
+            <div class="footer-newsletter">
+                <div class="phone-contact">
+                    <div class="hotline">
+                        <span class='text'>Đường dây nóng</span>
+                        <span class="number">0901.309.768</span>
+                    </div>
+                    <div class="ads-contact">
+                        <span class='text'>Liên hệ quảng cáo</span>
+                        <span class="number">0934.423.096</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class='w-1170 d-2xl-flex justify-content-between w-100'>
+            <div class="footer-left text">
+                Tổng biên tập: Lưu Quang Định <br/>
+                Phó tổng biên tập: Phan Huy Hà (Thường trực), Lưu Phan, Nguyễn Văn Hoài
+            </div>
+            <div class="footer-center text">
+                Giấy phép số 15/GP-CBC cấp ngày 15/4/2022 <br/>
+                Thế Giới Tiếp Thị Online giữ bản quyền nội dung này
+            </div>
+            <div class="footer-right d-2xl-flex align-items-center">
+                <a href="#" title='instagram' class="footer-right__item">
+                    <i class="sprite sprite-instagram"></i>
+                </a>
+                <a href="#" title='basketball' class="footer-right__item">
+                    <i class="sprite sprite-basketball"></i>
+                </a>
+                <a href="#" title='twitter' class="footer-right__item">
+                    <i class="sprite sprite-twitter-white"></i>
+                </a>
+                <a href="#" title='youtube' class="footer-right__item">
+                    <i class="sprite sprite-youtube"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pc -->
+    <!-- mb -->
+    <div class="d-2xl-none d-md-block">
+      <div class="footer-mb">
+        <div class="footer-1">
+          <div class="w-1170">
+              <div class="footer-contact">
+                  <a href="#" class="footer-logo">
+                      <img src="./images/logo.png" alt="Logo">
+                  </a>
+              </div>
+  
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Thời sự">Thời sự</a>
+                </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="" title="Thị trường 24h">Thị trường 24h</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Tiếp thị - Bán hàng">Tiếp thị - Bán hàng</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Đô thị - Địa ốc">Đô thị - Địa ốc</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Đầu tư - Tài chính">Đầu tư - Tài chính</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Xe &amp; Số">Xe &amp; Số</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Shopping">Shopping</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Giải trí - Du lịch - Ẩm thực">Giải trí - Du lịch - Ẩm thực</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Media">Media</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#" class="" title="Góc nhìn thị trường">Góc nhìn thị trường</a>
+                </li>
+              </ul>
+              <div class="footer-newsletter">
+                  <div class="phone-contact d-2xl-flex align-item-center justify-content-between">
+                      <div class="hotline">
+                          <span class='text'>Đường dây nóng</span>
+                          <span class="number">0901.309.768</span>
+                      </div>
+                      <div class="ads-contact">
+                          <span class='text'>Liên hệ quảng cáo</span>
+                          <span class="number">0934.423.096</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="footer-secondary">
+          <p class="text">Chuyên trang của Báo điện tử Dân Việt</p>
+          <p class="text">
+              Trụ sở: 13 Thụy Khuê, Tây Hồ, Hà Nội
+          </p>
+          <p class="text">
+              Toà soạn: 236A/6 Lê Văn Sỹ, P.1, Quận Tân Bình, TP.HCM
+          </p>
+          <p class="text">
+              Website: thegioitiepthi.danviet.vn
+          </p>
+          <p class="text">
+              Email: tgtto.dv@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end mb -->
+    <!-- back top -->
+    <div id="back-top"><i class="fas fa-arrow-up text-white"></i></div>
+    <!-- end back top -->
+  </footer>
+  <!-- end footer -->
+
+  <script src="./lib/slick/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="./lib/swiper/swiper-bundle.min.js"></script>
+  <script src="./lib/font-awesome/fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
+  <script src="./js/ResizeSensor.js"></script>
+  <script src="./js/theia-sticky-sidebar.js"></script>
+  <script src="./lib/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

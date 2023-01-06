@@ -113,6 +113,30 @@
     width: 22px;
     height: 15px;
   }
+  &.sprite-share-facebook {
+    background: url("../images/spritesheet.png") no-repeat -344px -2px;
+    background-size: 538px 101px;
+    width: 32px;
+    height: 32px;
+  }
+  &.sprite-google-plus {
+    background: url("../images/spritesheet.png") no-repeat -54px -2px;
+    background-size: 538px 101px;
+    width: 31px;
+    height: 31px;
+  }
+  &.sprite-twitter {
+    background: url("../images/spritesheet.png") no-repeat -428px -2px;
+    background-size: 538px 101px;
+    width: 31px;
+    height: 31px;
+  }
+  &.sprite-save-link {
+    background: url("../images/spritesheet.png") no-repeat -310px -2px;
+    background-size: 538px 101px;
+    width: 31px;
+    height: 31px;
+  }
 }
 
 .hot-news {
@@ -267,6 +291,49 @@
     color: #fff;
   }
 }
+.play-media-secondary {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba($color: #000000, $alpha: 0.7);
+
+  & i {
+    font-size: 14px;
+    color: rgba($color: #fff, $alpha: 0.3);
+    transition: 0.2s;
+  }
+  &:hover i {
+    color: #fff;
+  }
+}
+.play-video {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+
+  & i {
+    font-size: 14px;
+    color: #fff;
+    transition: 0.2s;
+  }
+  &:hover i {
+    color: #fff;
+  }
+}
 .see-more {
   font-size: 12px;
   line-height: 14px;
@@ -277,6 +344,10 @@
   width: -moz-max-content;
   width: max-content;
   margin-left: auto;
+
+  &--white {
+    color: #fff;
+  }
 }
 
 .articles-custom {
@@ -332,6 +403,128 @@
 
     & .articles-des {
       padding: 0 18px;
+    }
+  }
+}
+
+// --------------------------------------------------------------mobile
+.block-secondary {
+  margin-bottom: 30px;
+  & .block-header {
+    border-top: none;
+    padding-top: 4px;
+    overflow: inherit;
+  }
+
+  & .sub-title__btn {
+    width: 20px;
+    height: 20px;
+    background: #d1232a;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  }
+
+  & .sub-title__list {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    min-width: 106px;
+    background: #fff;
+    padding: 13px 12px;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    & .sub-title__item a {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #4f4f4f;
+      margin-bottom: 6px;
+    }
+  }
+
+  & .block-secondary-large {
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background: linear-gradient(
+        360deg,
+        #000000 6.09%,
+        rgba(0, 0, 0, 0.64) 23.91%,
+        rgba(0, 0, 0, 0) 43.31%
+      );
+    }
+
+    & .block-secondary-title {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      z-index: 12;
+    }
+  }
+  & .articles-top__small {
+    padding: 0;
+  }
+
+  & .articles-custom .articles-custom__left {
+    padding: 12px 15px 25px;
+  }
+
+  & .articles-custom .articles-custom__left-top .articles-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 10px 0px 0;
+  }
+
+  & .articles-custom .articles-des {
+    font-size: 14px;
+  }
+
+  & .articles-custom .articles-custom__right .articles-custom__item {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  & .articles-custom .articles-custom__right .articles-title {
+    font-size: 15px;
+    padding: 0;
+  }
+  & .articles-custom .articles-custom__right .articles-des {
+    padding: 0;
+  }
+}
+
+.media-secondary {
+  padding: 25px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  & .media-secondary-large {
+    margin-bottom: 16px;
+
+    & .icon-type {
+      position: absolute;
+      left: 16px;
+      bottom: 11px;
+    }
+
+    & .articles-content {
+      background-color: #fff;
+      padding: 19px 16px;
     }
   }
 }
