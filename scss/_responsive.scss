@@ -1,5 +1,5 @@
 // max width 1280px
-@media (max-width: 80em) {
+@media (max-width: 1280px) {
   .d-xl-none {
     display: none;
   }
@@ -15,7 +15,7 @@
   /*-------------------------------------------------------------*/
 }
 // max width 1024px
-@media (max-width: 64em) {
+@media (max-width: 1024px) {
   .d-lg-none {
     display: none;
   }
@@ -27,6 +27,10 @@
   }
   .d-lg-grid {
     display: grid;
+  }
+  .w-1170 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   /*-------------------------------------------------------------video*/
   .play-media {
@@ -143,6 +147,10 @@
       font-weight: bold;
     }
 
+    .related-posts {
+      padding-left: 0;
+      margin: 16px 0 23px;
+    }
     & .detail-content > p {
       font-size: 14px;
     }
@@ -231,7 +239,7 @@
 }
 
 // max width 768px
-@media (max-width: 48em) {
+@media (max-width: 768px) {
   .d-md-none {
     display: none;
   }
@@ -247,7 +255,7 @@
 }
 
 // max width 640px
-@media (max-width: 40em) {
+@media (max-width: 640px) {
   .d-sm-none {
     display: none;
   }

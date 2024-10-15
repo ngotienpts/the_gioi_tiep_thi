@@ -19,6 +19,20 @@
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
 }
+.related-posts {
+  padding-left: 80px;
+  margin: 16px 0 23px;
+}
+.related-posts__item {
+  display: flex;
+  align-items: center;
+}
+.related-posts__link {
+  font-size: 15px;
+  line-height: 22px;
+  color: #c31e40;
+  padding-left: 4px;
+}
 .detail-content {
   padding-bottom: 56px;
   border-bottom: 1px solid #bdbdbd;
@@ -35,6 +49,8 @@
     font-size: 15px;
     color: #262626;
     margin-bottom: 13px;
+    word-wrap: break-word;
+    word-break: break-word;
   }
   & figure figcaption {
     display: block;

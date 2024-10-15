@@ -250,6 +250,7 @@ sup {
     height: 100%;
     background: #d6371c;
     border-radius: 0px 2px 2px 0px;
+    padding: 0;
   }
 }
 .hidden {
@@ -304,4 +305,20 @@ sup {
   & .articles-content {
     margin-top: 0 !important;
   }
+}
+.icon-w-30 {
+  width: 20px !important;
+  height: auto !important;
+}
+.icon-w-20 {
+  width: 20px;
+  height: auto;
+}
+.icon-w-16 {
+  width: 16px !important;
+  height: auto !important;
+}
+.icon-w-14 {
+  width: 14px !important;
+  height: auto !important;
 }

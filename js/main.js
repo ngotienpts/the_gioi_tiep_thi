@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // media
       this.sliderMedia();
       // sticky bar home 1
-      this.stickyHome1();
+      // this.stickyHome1();
       // fancybox
       this.fancybox();
     },
