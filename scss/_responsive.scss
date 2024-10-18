@@ -268,6 +268,20 @@
   .d-sm-grid {
     display: grid;
   }
+  /*------------------------------------------------------------ detail*/
+  .detail-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /*------------------------------------------------------------ footer*/
+  .footer-contact {
+    
+    & .footer-logo {
+      img {
+        width: 137px;
+      }
+    }
+  }
 }
 
 // danh cho man hinh duoi 400px

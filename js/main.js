@@ -1,12 +1,29 @@
+function throttle(func, limit) {
+  let lastFunc;
+  let lastRan;
+  return function () {
+    const context = this;
+    const args = arguments;
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(function () {
+        if ((Date.now() - lastRan) >= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
+}
 document.addEventListener("DOMContentLoaded", function () {
   // back top
   var backTop = document.querySelector("#back-top");
 
   // width document
   var widthDoc = document.querySelector("body");
-
-  // fancybox
-  var fancyboxes = document.querySelectorAll(".fancybox-full");
 
   // navbar sticky
   var navbar = document.querySelector(".navbar");
@@ -125,20 +142,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       });
     },
-    // sticky bar home 1
-    stickyHome1: function () {
-      $(".leftSidebar-1,.rightSidebar-1").theiaStickySidebar({
-        additionalMarginTop: 60,
-      });
-    },
-    // fancybox
-    fancybox: function () {
-      if (fancyboxes) {
-        fancyboxes.forEach(function (fancybox) {
-          $(".fancybox-full a").fancybox();
-        });
-      }
-    },
     // scroll top
     scrollFunc: function () {
       if (backTop) {
@@ -184,15 +187,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // su ly cac su kien
       this.handleEvent();
       // window scroll
-      this.windowScroll();
+      window.addEventListener('scroll', throttle(this.windowScroll.bind(this),300));
       // slide topic list
       this.slideToppicList();
       // media
       this.sliderMedia();
-      // sticky bar home 1
-      // this.stickyHome1();
-      // fancybox
-      this.fancybox();
     },
   };
 

@@ -40,8 +40,12 @@
 
   & .footer-logo {
     display: block;
-    width: 171px;
     margin-bottom: 18px;
+
+    img {
+      width: 171px;
+      height: auto;
+    }
   }
 }
 .footer-nav {
