@@ -241,3 +241,44 @@
     }
   }
 }
+
+
+.detail-related {
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  .more-text {
+    padding-left: 10px;
+    display: block;
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    font-family: Arial;
+    line-height: 28px;
+}
+
+  & .box-articles__item {
+    border: 1px solid #e3e3e3;
+    border-left: 1px solid #fc915c;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  & .box-articles__img {
+    width: 20%;
+    flex-shrink: 0;
+    order: 2;
+  }
+  & .box-articles__content {
+    flex: 1;
+    padding: 10px 7px;
+    order: 1;
+  }
+
+  & .box-articles__title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+}

@@ -194,6 +194,10 @@
         font-size: 12px;
       }
     }
+
+    .detail-related .box-articles__img {
+      width: 35%;
+  }
   }
 
   /*-------------------------------------------------------------search*/
@@ -239,7 +243,7 @@
 }
 
 // max width 768px
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .d-md-none {
     display: none;
   }
@@ -255,7 +259,7 @@
 }
 
 // max width 640px
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .d-sm-none {
     display: none;
   }
